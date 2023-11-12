@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* const [items, setItems] = useState(initialItems);
+const [filter, setFilter] =  useState("");
+
+const handleSearch = (e) => {
+  const inputVal = e.target.value;
+  setFilter(inputVal)
+
+  const filteredItems = initialItems.filter((item) =>
+    item.name.toLowerCase().includes(inputVal.toLowerCase())
+  );
+
+  setItems(filteredItems);
+
+} */
+
+ /* <input type="text" placeholder='search...' value={filter} onChange={handleSearch}/>
+      <ul>
+        {items.map((item) => (
+          <li key={item.id}>{item.name}</li>
+        ))}
+</ul> */
