@@ -15,6 +15,7 @@ const Data = [
 export const SearchFilterComponent = () => {
     const [items, setItems] = useState(Data);
     const [filter, setFilter] = useState("");
+    console.log(items);
 
     const handleFilter = (e) => {
         const inputVal = e.target.value;
@@ -27,10 +28,10 @@ export const SearchFilterComponent = () => {
     }
     return (
         <>
-        <input type="text" value={filter} onChange={handleFilter} />
-        {items.map((item) => {
-            return <li key={item.id}>{item.name}</li>
-        })}
+            <input type="text" value={filter} onChange={handleFilter} />
+            {items.map((item) => {
+                return <li key={item.id}>{item.name}</li>
+            })}
         </>
     )
 }
