@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react";
 // https://jsonplaceholder.typicode.com/users
+
 export const ApiCallComponent = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState([])
 
     useEffect(() => {
         const getData = async () => {
@@ -9,8 +10,8 @@ export const ApiCallComponent = () => {
                 const res = await fetch(
                   "https://jsonplaceholder.typicode.com/users");
 
-                  if(!res.ok) {
-                    throw new Error("something bad happen");
+                  if (!res.ok) {
+                    console.log("holly smokes");
                   }
 
                   const result = await res.json()
@@ -21,16 +22,11 @@ export const ApiCallComponent = () => {
         }
         getData()
     }, [])
-
-    return (
-      <>
-       {data ? (
-        <ul>
-            {data.map((user) => {
-                return <li key={user.id}>{user.name}</li>
-            })}
-        </ul>
-       ) : "loading"}
-      </>
-    );
-}
+  return <div>
+    {data ? (<ul>
+        {data.map((user) => {
+            return <li key={user.id}>{user.name}</li>
+        })}
+    </ul>) : "loading"}
+  </div>;
+};
