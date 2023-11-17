@@ -1,7 +1,8 @@
 import './App.css';
+import  Form  from './components/Form';
 // import { ToggleComponent } from './components/ToggleComponent';
 // import { SearchFilterComponent } from './components/SearchFilterComponent';
-import { ApiCallComponent } from './components/ApiCallComponent';
+// import { ApiCallComponent } from './components/ApiCallComponent';
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <>
      {/* <ToggleComponent /> */}
      {/* <SearchFilterComponent /> */}
-     <ApiCallComponent />
+     {/* <ApiCallComponent /> */}
+     <Form />
     </>
   );
 }
