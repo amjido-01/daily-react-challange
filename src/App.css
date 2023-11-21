@@ -1,15 +1,89 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
   color: white;
 }
 
 .card {
-  padding: 2em;
+  /* padding: 2em; */
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: blue;
+  position: absolute;
+}
+
+/* Preloader.css */
+
+/* Preloader.css */
+
+.preloader {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.white-door {
+  height: 100%;
+  border: 2px solid blue;
+  width: 50%;
+  background-color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  animation: openDoor 2s forwards; /* Animation for door opening */
+}
+
+.red-door {
+  border: 2px solid green;
+  width: 50%;
+  height: 100%;
+  background: #0b1121;
+  animation: openDoor 2s forwards;
+}
+
+.welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+/* .door:nth-child(1) {
+  border-right: 2px solid white;
+  animation-delay: 1s; /* Delay for the second door */
+
+/* .door:nth-child(2) {
+  border-left: 2px solid red;
+  animation-delay: 1s;
+}
+
+.preloader.loading .door:nth-child(1) {
+  background-color: red;
+} */
+
+/* .preloader.loading .door:nth-child(2) {
+  background-color: white;
+} */
+
+@keyframes openDoor {
+  to {
+    transform: scaleX(0);
+  }
 }
