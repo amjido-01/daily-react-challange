@@ -10,7 +10,7 @@ export const AnimatedStars = (props) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}
-    className="lucide lucide-star"
+    className="lucide lucide-star text-[#fff]"
     initial={{ scale: 0.5, rotate: 0 }} // Initial state
     animate={{
       scale: [0.5, 2, 0.5], // Scale animation
