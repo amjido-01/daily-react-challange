@@ -1,15 +1,16 @@
-import { SectionOne } from './SectionOne'
-import { SectionTwo } from './SectionTwo'
-import { SectionThree } from './SectionThree'
-import { SectionFour } from './SectionFour'
-import { Example } from './Example'
-import TextAnimation from './TextAnimation'
-import HeroSection from "./HeroSection"
-import HamburgerMenu from './HamburgerMenu'
+// import { SectionOne } from './SectionOne'
+// import { SectionTwo } from './SectionTwo'
+// import { SectionThree } from './SectionThree'
+// import { SectionFour } from './SectionFour'
+// import { Example } from './Example'
+// import TextAnimation from './TextAnimation'
+// import HeroSection from "./HeroSection"
+// import HamburgerMenu from './HamburgerMenu'
+import { Testing } from "./Testing";
 export const Landing = () => {
   return (
     <div className=" min-h-screen">
-      <HamburgerMenu />
+      {/* <HamburgerMenu />
       <HeroSection />
       <TextAnimation />
       <SectionOne />
@@ -18,7 +19,8 @@ export const Landing = () => {
       <SectionFour />
       <Example />
       <SectionThree />
-      <SectionFour />
+      <SectionFour /> */}
+      <Testing />
     </div>
   );
 }
